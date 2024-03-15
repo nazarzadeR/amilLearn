@@ -1,0 +1,51 @@
+.user_actions {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &_container {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        cursor: pointer;
+        border-radius: 5px;
+        align-items: center;
+        justify-content: center;
+        background-color: #fafafa;
+        border: 1px solid transparent;
+
+        &:hover {
+            border-color: #91d5ff;
+        }
+
+        & > svg {
+            font-size: 16px;
+        }
+    }
+}
+
+.user_popover {
+    &_content{
+        gap: 5px;
+        display: flex;
+        padding: .2rem;
+        flex-direction: column;
+
+        &_item {
+            gap: 5px;
+            width: 100%;
+            display: flex;
+            cursor: pointer;
+            border-radius: 3px;
+            align-items: center;
+            padding: .3rem 0.4rem;
+            box-sizing: border-box;
+            justify-content: flex-start;
+
+            &:hover {
+                background-color: #f0f0f0;
+            }
+        }
+    }
+}
